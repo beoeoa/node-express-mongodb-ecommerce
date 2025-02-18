@@ -1,0 +1,136 @@
+<%- include('common/header'); -%>
+  <!-- ********|| ALL PAGE START ||******** -->
+    <section class="all-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-box">
+                        <span><a href="index" class="item-action"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Home</font></font></a></span>
+                        <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> <i class="fal fa-chevron-right"></i> </font></font></span>
+                        <span class="active"><a href="contact" class="item-action"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cart</font></font></a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ********|| ALL PAGE END ||******** -->
+<!-- ********|| CART PAGE START||******** -->
+    <section class="cart-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title-box">
+                            <h5 class="title">Cart</h5>
+                        </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="item-table">
+                        <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th scope="col">Image</th>
+                      <th scope="col">Product</th>
+                      <th scope="col">Price</th>
+                      <th scope="col">Quantity</th>
+                      <th scope="col">Total</th>
+                      <th scope="col">Remove</th>
+                    </tr>
+                  </thead>
+  <tbody>
+    <tr>
+      <td><div class="img-box">
+    <img class="img-fluid" src="assets/images/product-15.1.jpg">
+    </div>
+                        </td>
+                        <td>
+                        <div class="btn-box">
+                                <div class="item-btn"><a href="#" class="btn-blush">Gaming Pc</a></div>
+                            </div>
+                            </td>
+                            <td>
+                            <div class="price-box">
+                                <h5 class="item-price">$ 192.00</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="buy-box">
+                                <form class="quantity-spinner">
+								<button type="button" class="btn-quantity minus"><i class="far fa-fw fa-minus"></i></button>
+								<input type="number" class="quantity-input" placeholder="1" value="1" name="qty" id="qty">
+								<button type="button" class="btn-quantity plus"><i class="far fa-fw fa-plus"></i></button>
+							</form>
+                    </div>
+                </td>
+                <td>
+            <div class="price-box">
+                        <h5 class="item-price">$192.00</h5>
+                    </div>
+                </td>
+                <td>
+            <div class="del-box">
+                <a href="#" class="btn-del"><i class="fas fa-trash-alt"></i></a>
+            </div>
+        </td>
+      
+    </tr>
+    <tr>
+  <td colspan="6">
+        <div class="copon-box">
+            <div class="form-box">
+                <form>
+      <input class="form-control" type="search" placeholder="Coupon Code" name="">
+    </form>
+                <button class="app-btn" type="submit">Apply Coupon</button>
+                            </div>
+                                    <div class="up-btn-box">
+                                    <div class="viw-btn"><a href="#" class="item-btn">UPDATE CART</a></div>
+                                    </div>
+                                </div>
+                            </td>
+                      </tbody>
+                    </table>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="out-box">
+                    <h5 class="card-title">Cart totals</h5>                      
+                    <table class="table table-bordered">
+                    <tbody>
+                    <tr>
+                    <th><h6 class="card-content">Subtotal</h6></th>
+                    <td colspan="6">
+                        <p class="card-price">$192.00</p>
+                    </td>
+                </tr>
+                  <tr>
+                    <th><h6 class="card-content">Subtotal</h6></th>
+                    <td colspan="6">
+                        <p class="card-price">$192.00</p>
+                    </td>
+                </tr>
+              </tbody>
+            </table>
+                        <div class="item-actions">
+                            <a href="check-out" class="btn-cart">
+                            <span>Proceed to checkout</span>
+                          
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- ********|| CART PAGE END||******** -->
+   
+    
+<%- include('common/footer'); -%>

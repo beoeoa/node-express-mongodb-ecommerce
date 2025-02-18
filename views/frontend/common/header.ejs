@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title><%= title %></title>
+
+<!-- ********|| STYLESHEETS STARTS ||******** -->
+<style>
+	:root{
+		--primaryColor:#f39787;
+		--secondaryColor:#2d2d32;
+		--thirdColor:#679699;
+		--textColor:#97c7cc;
+		--lightColor:#f6f5f7;
+	}
+	img{max-width:100%;}
+	.preloader{position: fixed;width: 100%;height: 100%;text-align: center;z-index: 999999; background-color: #fff;opacity: 1; visibility: visible; transition: all 0.3s ease;}
+	.preloader.inactive{opacity: 0; visibility: hidden;}
+	.preloader:after{content:'';display:inline-block;height:100%;vertical-align:middle;margin-right:-.25em}
+	.preloader:before{content:'';display:block;height:100%;}
+	.preloader .content{box-sizing:border-box;animation:fadein 0.5s 1s linear forwards;display:inline-block;vertical-align:middle;text-align:left;font-size:0;opacity:0}
+	.loader-line-mask{position:absolute;left:50%;top:50%;width:30px;height:60px;margin-left:-30px;margin-top:-30px;overflow:hidden;transform-origin:30px 30px;-webkit-mask-image:-webkit-linear-gradient(top,var(--primaryColor),rgba(0,0,0,0));mix-blend-mode:hard-light;opacity:.8}
+	.loader-line-mask .loader-line{width:60px;height:60px;border-radius:50%}
+	.loader-line-mask.one{animation:rotate 1.6s infinite linear}
+	.loader-line-mask.one .loader-line{box-shadow:inset 0 0 0 8px var(--primaryColor);}
+	.loader-line-mask.two{animation:rotate 1.6s 0.8s infinite linear}
+	.loader-line-mask.two .loader-line{box-shadow:inset 0 0 0 8px var(--primaryColor);}
+	@keyframes rotate {
+	0%{-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg)}
+	100%{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}
+	}
+	@keyframes fadein {
+	0%{opacity:0}
+	100%{opacity:1}
+	}
+</style>
+<link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+<!-- ********|| STYLESHEETS ENDS ||******** -->
+<!--[if gte IE 9]
+<style type="text/css"> .gradient{filter: none;}</style>
+<![endif]-->
+</head>
+<body>
+	<div class="preloader">
+		<div class="content">
+			<div class="loader-circle"></div>
+			<div class="loader-line-mask one">
+				<div class="loader-line"></div>
+			</div>
+			<div class="loader-line-mask two">
+				<div class="loader-line"></div>
+			</div>
+		</div>
+	</div>
+	  
+<!-- ********|| MODALS STARTS ||******** -->
+    <div class="view-modal">
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+                <div class="modal-box">
+                <div class="col-lg-6">
+                    <div id=owldemo4 class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="img-box">
+                                <img class="img-fluid" src="assets/images/prd-7.1.jpg">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img-box">
+                                <img class="img-fluid" src="assets/images/prd-7.1.jpg">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img-box">
+                                <img class="img-fluid" src="assets/images/prd-7.1.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="product-content">
+                        <div class="product-title">
+                            <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Connect Infotech Ryzen 3200G</font></font>
+                        </div>
+                        <div class="product-price">
+                            <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">$ 150</font></font>
+                        </div>
+                        <div class="product-meta">
+						<div class="item">
+							<div class="item-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Category:</font></font></div>
+							<div class="item-data"><a href="#" class="cata-btn"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Gaming</font></font></a></div>
+						</div>
+												<div class="item">
+							<div class="item-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Keywords:</font></font></div>
+							<div class="item-data">
+														</div>
+													</div>
+						<div class="item">
+							<div class="item-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mark:</font></font></div>
+							<div class="item-data"><a href="#" class="cata-btn"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SONY</font></font></a></div>
+						</div>
+					</div>
+                        <div class="product-description">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
+                        </div>
+                        <div class="product-option">
+				        <a href="wishlist" class="btn-wishlist"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Add to wishlist</font></font></a>
+				    </div>
+                        <div class="product-action-wrap">
+						<div class="product-quantity">
+							<div class="quantity-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Amount:</font></font></div>
+							<form class="quantity-spinner">
+								<button type="button" class="btn-quantity minus"><i class="far fa-fw fa-minus"></i></button>
+								<input type="number" class="quantity-input" placeholder="1" value="1" name="qty" id="qty">
+								<button type="button" class="btn-quantity plus"><i class="far fa-fw fa-plus"></i></button>
+							</form>
+						</div>
+						<div class="product-actions">
+							<a href="your-cart" class="btn-addtocart"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Add to Cart</font></font></a>
+							<a href="my-account.html" class="btn-buynow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Buy now</font></font></a>
+						</div>
+				    </div>
+                    </div>
+            </div>
+        </div> 
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+<!-- ********|| MODALS ENDS ||******** -->
+<!-- ********|| HEADER START ||******** -->
+    <header class="header">
+    <div class="top-heder">
+        <div class="container">
+                    <div class="brand">
+                        <a href="/" class="logo">
+                            <img class="img-fluid" src="assets/images/logo.png" alt="" title="Brand">
+                        </a>
+                    </div>
+            <div class="search">
+								<form action="#" class="search-input" method="get">
+          <input class="form-control" type="search" placeholder="Search" name="keyword" value="">
+          <button class="btn-search" type="submit">Search</button>
+        </form>
+        </div> 
+            <div class="hearder-options">
+				<div class="user-options">
+					<a href="my-account" class="item"><i class="fas fa-fw fa-user-alt"></i></a>
+					<a href="/wishlist" class="item"><i class="fas fa-fw fa-heart"></i></a>
+					<a href="your-cart" class="item"><i class="fas fa-shopping-cart"></i></a>
+                    <a href="javascript:void(0)"  data-toggle="modal" data-target="#signupModal" class="item">
+                        <i class="fas fa-fw fa-sign-in-alt"></i>
+                    </a>
+                    
+				    </div>
+				</div>
+            </div> 
+    </div>
+     <div class="header-navigation">
+            <div class="container">
+                <div class="navigation">
+                    <div class="responsive-action">
+					<a href="javascript:void(0)" class="btn-menu"><i class="far fa-fw fa-bars"></i></a>
+				</div>
+                    <div class="navigation-wrap">
+                        <ul class="navigation-menu">
+                            <li class="<%= path=='/home' ? 'active' :'' %>"><a href="/" class="menu-link"><i class="fad fa-fw fa-home"></i><span>HOME</span></a></li>
+                            <li class="<%= path=='/about' ? 'active' :'' %>"><a href="about-us" class="menu-link"><i class="fad fa-fw fa-users"></i><span>ABOUT US</span></a></li>
+                            <li class="<%= path=='/category' ? 'active' :'' %>"><a href="our-category" class="menu-link"><i class="fad fa-fw fa-cubes"></i><span>Categories</span></a></li>
+                            <li class="<%= path=='/product' ? 'active' :'' %>"><a href="/product" class="menu-link"><i class="fad fa-fw fa-box-alt"></i><span>Some products</span></a></li>
+                            <li class="<%= path=='/contact' ? 'active' :'' %>"><a href="contact" class="menu-link"><i class="fad fa-fw fa-address-card"></i><span>Contact us</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="menu-overlay"></div>
+    </header>
+<!-- ********|| HEADER ENDS ||******** -->

@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Forgot</title>
+
+<!-- ********|| STYLESHEETS STARTS ||******** -->
+<style>
+	:root{
+		--primaryColor:#f39787;
+		--secondaryColor:#2d2d32;
+		--thirdColor:#efefef;
+		--textColor:#f8fbfd;
+		--lightColor:#f6f5f7;
+	}
+	img{max-width:100%;}
+	.preloader{position: fixed;width: 100%;height: 100%;text-align: center;z-index: 999999; background-color: #fff;opacity: 1; visibility: visible; transition: all 0.3s ease;}
+	.preloader.inactive{opacity: 0; visibility: hidden;}
+	.preloader:after{content:'';display:inline-block;height:100%;vertical-align:middle;margin-right:-.25em}
+	.preloader:before{content:'';display:block;height:100%;}
+	.preloader .content{box-sizing:border-box;animation:fadein 0.5s 1s linear forwards;display:inline-block;vertical-align:middle;text-align:left;font-size:0;opacity:0}
+	.loader-line-mask{position:absolute;left:50%;top:50%;width:30px;height:60px;margin-left:-30px;margin-top:-30px;overflow:hidden;transform-origin:30px 30px;-webkit-mask-image:-webkit-linear-gradient(top,var(--primaryColor),rgba(0,0,0,0));mix-blend-mode:hard-light;opacity:.8}
+	.loader-line-mask .loader-line{width:60px;height:60px;border-radius:50%}
+	.loader-line-mask.one{animation:rotate 1.6s infinite linear}
+	.loader-line-mask.one .loader-line{box-shadow:inset 0 0 0 8px var(--primaryColor);}
+	.loader-line-mask.two{animation:rotate 1.6s 0.8s infinite linear}
+	.loader-line-mask.two .loader-line{box-shadow:inset 0 0 0 8px var(--primaryColor);}
+	@keyframes rotate {
+	0%{-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg)}
+	100%{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}
+	}
+	@keyframes fadein {
+	0%{opacity:0}
+	100%{opacity:1}
+	}
+</style>
+<link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+<!-- ********|| STYLESHEETS ENDS ||******** -->
+<!--[if gte IE 9]
+<style type="text/css"> .gradient{filter: none;}</style>
+<![endif]-->
+</head>
+<body>
+	<div class="preloader">
+		<div class="content">
+			<div class="loader-circle"></div>
+			<div class="loader-line-mask one">
+				<div class="loader-line"></div>
+			</div>
+			<div class="loader-line-mask two">
+				<div class="loader-line"></div>
+			</div>
+		</div>
+	</div>
+	  
+<!-- ********|| HEADER START ||******** -->
+    <header class="header">
+    <div class="top-heder">
+        <div class="container">
+                    <div class="brand">
+                        <a href="index.html" class="logo">
+                            <img class="img-fluid" src="assets/images/logo.png" alt="" title="Brand">
+                        </a>
+                    </div>
+            <div class="search">
+								<form action="#" class="search-input" method="get">
+          <input class="form-control" type="search" placeholder="Search" name="keyword" value="">
+          <button class="btn-search" type="submit">Search</button>
+        </form>
+        </div> 
+            <div class="hearder-options">
+								<div class="user-options">
+					<a href="my-account.html" class="item"><i class="fas fa-fw fa-user-alt"></i></a>
+					<a href="wishlist.html" class="item"><i class="fas fa-fw fa-heart"></i></a>
+					<a href="cart.html" class="item"><i class="fas fa-shopping-cart"></i></a>
+				    </div>
+				</div>
+                </div> 
+    </div>
+     <div class="header-navigation">
+            <div class="container">
+                <div class="navigation">
+                    <div class="responsive-action">
+					<a href="javascript:void(0)" class="btn-menu"><i class="far fa-fw fa-bars"></i></a>
+				</div>
+                    <div class="navigation-wrap">
+                        <ul class="navigation-menu">
+                            <li class=""><a href="index.html" class="menu-link"><i class="fad fa-fw fa-home"></i><span>HOME</span></a></li>
+                            <li class=""><a href="about-us.html" class="menu-link"><i class="fad fa-fw fa-users"></i><span>ABOUT US</span></a></li>
+                            <li class=""><a href="our-category.html" class="menu-link"><i class="fad fa-fw fa-cubes"></i><span>Categories</span></a></li>
+                            <li class=""><a href="product.html" class="menu-link"><i class="fad fa-fw fa-box-alt"></i><span>Some products</span></a></li>
+                            <li class=""><a href="contact-us.html" class="menu-link"><i class="fad fa-fw fa-address-card"></i><span>Contact us</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="menu-overlay"></div>
+    </header>
+<!-- ********|| HEADER ENDS ||******** -->
+  <!-- ********|| ALL PAGE START ||******** -->
+    <section class="all-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-box">
+                        <span><a href="index.html" class="item-action"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Home</font></font></a></span>
+                        <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> <i class="fal fa-chevron-right"></i> </font></font></span>
+                        <span class="active"><a href="contact-us.html" class="item-action"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Forgot your password</font></font></a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ********|| ALL PAGE END ||******** -->
+<!-- ********|| MY ACCOUNT PAGE START ||******** -->
+    <section class="sec-account">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="account-content">
+                    <div class="form-content">
+                        <div class="form-title">
+                            <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Forgot your password</font></font>
+                        </div>
+                        <form id="forgotForm">
+                        <div class="form-group">
+								<div class="control-label required"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">E-mail</font></font></div>
+								<input type="email" class="form-control" placeholder="" name="email">
+							</div>
+                            <div class="form-group form-action">
+								<button type="button" class="btn-form-submit"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Submit</font></font></button> 
+							</div>
+                        </form>
+                    </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+<!-- ********|| MY ACCOUNT PAGE END ||******** -->
+   
+    
+              <!--    /* ********||FOOTER SECTION START||******** *-->
+        <footer class="foot-sec bg-gray">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-6">
+                        <div class="text-box">
+                            <a href="index.html"><img class="img-fluid" src="assets/images/logo.png" title="logo" alt="..."></a>
+                                        <ul class="foot-item">
+                                            <li class="item-content"><a href="#" class="btn-action"><i class="fal fa-phone-alt"></i>(800) 0236 523 425</a></li>
+                                            <li class="item-content"><a href="#" class="btn-action"><i class="fal fa-envelope"></i>@info253.com</a></li>
+                                            <li class="item-content"><a href="#" class="btn-action"><i class="fal fa-map-marker-alt"></i>My Company, 12/34 - West 21st Street, New York, USA</a></li>
+                                        </ul>
+                                    </div>
+                        <div class="icon-box">
+                                    <ul class="item-icon">
+                                            <li class="item-bar"><a href="#" class="icon-btn"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li class="item-bar"><a href="#" class="icon-btn"><i class="fab fa-twitter"></i></a></li>
+                                            <li class="item-bar"><a href="#" class="icon-btn"><i class="fab fa-vimeo-v"></i></a></li>
+                                            <li class="item-bar"><a href="#" class="icon-btn"><i class="fab fa-whatsapp"></i></a></li>
+                                            <li class="item-bar"><a href="#" class="icon-btn"><i class="fab fa-pinterest-p"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                     <div class="col-lg-2 col-6">
+                    <div class="menu-box">
+                                <h5 class="item-title">Categories</h5>
+                            <ul class="menu-item">
+                                <li class="item-nav"><a href="product-details.html" class="btn-nav">Men</a></li>
+                                <li class="item-nav"><a href="#" class="btn-nav">Women</a></li>
+                                <li class="item-nav"><a href="our-category.html" class="btn-nav">Accessories</a></li>
+                                <li class="item-nav"><a href="product.html" class="btn-nav">Shoes</a></li>
+                                <li class="item-nav"><a href="#" class="btn-nav">Denim</a></li>
+                                <li class="item-nav"><a href="#" class="btn-nav">Dress</a></li>
+                            </ul>
+                        </div>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <div class="menu-box">
+                                <h5 class="item-title">Infomation</h5>
+                            <ul class="menu-item">
+                                <li class="item-nav"><a href="aboutus.html" class="btn-nav">About Us</a></li>
+                                <li class="item-nav"><a href="contact-us.html" class="btn-nav">Contact Us</a></li>
+                                <li class="item-nav"><a href="terms-conditions.html" class="btn-nav">Terms &amp; Conditions</a></li>
+                                <li class="item-nav"><a href="#" class="btn-nav">Returns &amp; Exchanges</a></li>
+                                <li class="item-nav"><a href="product.html" class="btn-nav">Shipping &amp; Delivery</a></li>
+                                <li class="item-nav"><a href="privacy-policy.html" class="btn-nav">Privacy Policy</a></li>
+                            </ul>
+                            </div>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <div class="menu-box">
+                                <h5 class="item-title">Useful links</h5>
+                            <ul class="menu-item">
+                                <li class="item-nav"><a href="#" class="btn-nav">Store Location</a></li>
+                                <li class="item-nav"><a href="#" class="btn-nav">Latest News</a></li>
+                                <li class="item-nav"><a href="#" class="btn-nav">Size Guide</a></li>
+                                <li class="item-nav"><a href="#" class="btn-nav">Track My Order</a></li>
+                                <li class="item-nav"><a href="#" class="btn-nav">Special</a></li>
+                                <li class="item-nav"><a href="#" class="btn-nav">Help</a></li>
+                            </ul>
+                        </div>
+                </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                                <div class="menu-box">
+                                <h5 class="item-title">Newsletter Signup</h5>
+                                    <div class="item-text">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                    </div>
+                                 
+                                <form class="emil-box">
+                            <div class="form-group d-flex">
+                        <input type="email" class="form-control" placeholder="Your email address" name="">
+                        <button type="submit" class="sub-btn">Subscribe</button>
+                            </div>
+                        </form>
+                        </div>
+                                </div>
+                            </div>
+                        </div>
+                </footer>
+        <!--    /* ********||  FOOTER SECTION END||******** *-->
+        <!--    /* ********||  COPY RIGHT SECTION START||******** *-->
+        <section class="copy-right bg-gray">
+            <div class="container">
+                    <div class="row">
+                    <div class="col-lg-12">
+                            <div class="text-box">
+                            <h6>© Copyright clearsquare 2021 • All rights reserved</h6>
+                        </div>
+                        </div>
+                </div>
+            </div>
+    </section>
+    
+        <!--    /* ********||  COPY RIGHT SECTION END||******** *-->
+    
+    
+    
+    
+    
+    
+
+<!-- ********|| STYLESHEETS STARTS ||******** -->
+<link href="assets/lib/bootstrap4/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="assets/css/animate.min.css" rel="stylesheet" type="text/css">
+<link href="assets/lib/fontawesome5-all/css/all.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="assets/owl/owl3.css">
+<!--
+<link href="assets/lib/owl-carousel/owl.carousel.min.css" rel="stylesheet" type="text/css">
+<link href="assets/lib/owl-carousel/owl.theme.min.css" rel="stylesheet" type="text/css">
+-->
+<link href="assets/lib/fancybox/jquery.fancybox.min.css" rel="stylesheet" type="text/css">	
+<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+<link href="assets/css/responsive.css" rel="stylesheet" type="text/css">
+<!-- ********|| STYLESHEETS ENDS ||******** -->
+<!-- ********|| JAVASCRIPTS STARTS ||******** -->
+<script type="text/javascript" src="assets/lib/jQuery/jquery-3.3.1.js"></script>
+<script defer="defer" type="text/javascript" src="assets/lib/bootstrap4/popper.min.js"></script>
+<script defer="defer" type="text/javascript" src="assets/lib/bootstrap4/bootstrap.js"></script>
+<script src="assets/owl/owl-min.js"></script>
+<!--<script defer="defer" type="text/javascript" src="assets/lib/owl-carousel/owl.carousel.min.js"></script>-->
+<script defer="defer" type="text/javascript" src="assets/lib/fancybox/jquery.fancybox.min.js"></script>
+<script defer="defer" type="text/javascript" src="assets/lib/videoplayer/plyr.js"></script>
+<script defer="defer" type="text/javascript" src="assets/lib/wow/wow.min.js"></script>
+<script defer="defer" type="text/javascript" src="assets/js/script.js"></script>
+    
+<script defer="defer" type="text/javascript" src="assets/js/products.js"></script>
+<!-- ********|| JAVASCRIPTS ENDS ||******** -->
+<!-- ********|| ONPAGE JAVASCRIPTS STARTS ||******** -->
+<script defer="defer" type="text/javascript">
+	$(document).ready(function(){
+		
+	});
+</script>
+    
+<!-- ********|| ONPAGE JAVASCRIPTS ENDS ||******** -->
+</body>
+</html>
