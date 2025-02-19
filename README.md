@@ -5,6 +5,9 @@
 An ecommerce web application built with Node.js, Express, MongoDB, and EJS, featuring user authentication, product browsing, shopping cart, and checkout functionalities.
 For Admin-Panel I have used AdminLTE 3(free) template.
 
+## Project Status  
+🚧 This project is currently under active development. Some features may be incomplete or subject to change. 🚀  
+
 ## Technologies Used
 
 - Node.js
