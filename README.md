@@ -24,7 +24,7 @@ For Admin-Panel I have used AdminLTE 3(free) template.
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/yourusername/your-repo.git`
+1. Clone the repository: `git clone https://github.com/SubhadipBhattacharjee/node-express-mongodb-ecommerce.git`
 2. Install dependencies: `npm install`
 3. Configure environment variables (e.g., database connection string, JWT secret).
 4. Start the server: `npm start`
