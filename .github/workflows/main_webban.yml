@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy PHP app to Azure Web App - webban
+name: Build and deploy Node.js app to Azure Web App - webban
 
 on:
   push:
@@ -18,26 +18,21 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup PHP
-        uses: shivammathur/setup-php@v2
+      - name: Set up Node.js version
+        uses: actions/setup-node@v3
         with:
-          php-version: '8.2'
+          node-version: '18.x'
 
-      - name: Check if composer.json exists
-        id: check_files
-        uses: andstor/file-existence-action@v1
-        with:
-          files: 'composer.json'
-
-      - name: Run composer install if composer.json exists
-        if: steps.check_files.outputs.files_exists == 'true'
-        run: composer validate --no-check-publish && composer install --prefer-dist --no-progress
-
+      - name: npm install, build, and test
+        run: |
+          npm install
+          npm run build --if-present
+          npm run test --if-present
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
-          name: php-app
+          name: node-app
           path: .
 
   deploy:
@@ -51,18 +46,18 @@ jobs:
       - name: Download artifact from build job
         uses: actions/download-artifact@v4
         with:
-          name: php-app
+          name: node-app
       
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_DD8516EC838A4702823B56D5404E739A }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_1D69A8E003AF4D6C82B74EFBD8FEB7DA }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_3961E8084CFB42C49C71FEB573DD29D7 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_8D518BE427C74F71B5972F62BBD85D81 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_464BD0467FFC48E58AD0E214473ED9F8 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_519B23F23DA64CB789220EF630CCFA8A }}
 
       - name: 'Deploy to Azure Web App'
-        uses: azure/webapps-deploy@v3
         id: deploy-to-webapp
+        uses: azure/webapps-deploy@v3
         with:
           app-name: 'webban'
           slot-name: 'Production'
